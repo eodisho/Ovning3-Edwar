@@ -1,0 +1,33 @@
+  public string Fname
+        {
+            get
+            {
+                return Fname;
+            }
+            set
+            {
+                if (value.Length < 2 || value.Length > 10)
+                {
+                    throw new ArgumentException("the fName should be larger than 2 and less than 10 characters");
+                }
+                else
+                    Fname = value;
+            }
+        }
+
+        public string Lname
+        {
+            get
+            {
+                return Lname;
+            }
+            set
+            {
+                if (value.Length < 3 || value.Length > 15)
+                {
+                    throw new ArgumentException("the LName should be larger than 3 and less than 15 characters");
+                }
+                else
+                    Lname = value;
+            }
+        }
